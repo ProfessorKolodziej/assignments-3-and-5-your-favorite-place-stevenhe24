@@ -94,14 +94,14 @@ h2 {
 }
 .HarbinCuisine .item .CuisineP h3 {
 	font-family: "Cabin", sans-serif;
-	font-size: 2.63rem;
+	font-size: 2.2rem;
 	color: #000;
 	font-style: italic;
 }
 .HarbinCuisine .item .CuisineP p {
 	margin-top: 2.2%;
 	font-family: "Lora",serif;
-	font-size: 1.2rem;
+	font-size: 1.32rem;
 	color: #000;
 }
 ul {
@@ -112,7 +112,7 @@ ul li {
 	margin-top: 2.2%;
 	margin-left: 2%;
 	font-family: "Lora",serif;
-	font-size: 1.5rem;
+	font-size: 1.32rem;
 	color: #000;
 	word-break: break-all;
 }
@@ -159,7 +159,7 @@ ul li {
 	.intro,
 	.TopAttractions ol,
 	.TopAttractions ol p,
-	.harbinCuisine .item .CuisineP p,
+	.HarbinCuisine .item .CuisineP p,
 	ul li {
 	  font-size: 0.9rem;
 	}
