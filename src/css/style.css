@@ -1,11 +1,211 @@
-@media screen and (width >= 320px) {
-	#some-id {
-		color: red;
-	}
+*{
+margin: 0;
+padding: 0;
+}
+  
+body {
+	background-color: #d2edf9;
+}
+.width100 {
+	width: 100%;
+}
+.banner {
+	position: relative;
+  }
+.banner h1 {
+	position: absolute;
+	top: 28%;
+    left: 50%;
+	transform: translate(-50%, 0);
+    font-size: 8rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Merriweather", serif;
+}
+.intro {
+	padding: 2% 1%;
+	font-size: 1.5rem;
+	color: #000;
+	font-weight: normal;
+  }
+h2 {
+	padding: 2% 1%;
+	margin-top: 1%;
+	margin-left: 0.5%;
+	font-family: "Cabin";
+	font-size: 3.5rem;
+	color: #000;
+	font-style: italic;
+  }
+.TopAttractions ol {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	list-style-position: inside;
+}
+.TopAttractions ol li:nth-of-type(5) {
+	grid-column: span 2;
+	width: 50%;
+	margin: 0 auto;
+}
+.TopAttractions ol li {
+	margin: 2% 1%;
+	position: relative;
+}
+.TopAttractions ol li img {
+	height: 400px;
+	object-fit: cover;
+	margin-top: 2%;
+}
+.TopAttractions ol,
+.TopAttractions ol h3 {
+	font-family: "Cabin", serif;
+	font-size: 2.2rem;
+	color: #000;
+	font-style: italic;
+}
+.TopAttractions ol h3 {
+	position: absolute;
+	top: 0;
+	left: 30px;
+}
+.TopAttractions ol p {
+	display: block;
+	margin-top: 2.2%;
+	font-family: "Lora", serif;
+	font-size: 1.32rem;
+	color: #000;
+	word-break: break-all;
+	font-style: normal;
+}
+.HarbinCuisine .item {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.HarbinCuisine .item .CuisineImage {
+	width: 50%;
+}
+.HarbinCuisine .item .CuisineP {
+	width: 42%;
+	padding: 4%;
+}
+.HarbinCuisine .item:nth-of-type(2n) .CuisineImage {
+	order: 2;
+}
+.HarbinCuisine .item .CuisineP h3 {
+	font-family: "Cabin";
+	font-size: 2.63rem;
+	color: #000;
+	font-style: italic;
+}
+.HarbinCuisine .item .CuisineP p {
+	margin-top: 2.2%;
+	font-family: "Lora",serif;
+	font-size: 1.2rem;
+	color: #000;
+}
+ul {
+	width: 67%;
+	margin-left: 1%;
+}
+ul li {
+	margin-top: 2.2%;
+	margin-left: 2%;
+	font-family: "Lora",serif;
+	font-size: 1.5rem;
+	color: #000;
+	word-break: break-all;
 }
 
-@media screen and (width >= 500px) {
-	#some-id {
-		color: red;
+@media (min-width: 768px) and (max-width: 1024px) {
+	.banner h1 {
+	top: 18%;
+	font-size: 6.9rem;
+	}
+	.intro,
+	.TopAttractions ol p,
+	.HarbinCuisine .item .CuisineP p,
+	ul li {
+	  font-size: 1rem;
+	}
+	h2 {
+	  font-size: 2.4rem;
+	}
+	.TopAttractions ol,
+	.TopAttractions ol h3 {
+	  font-size: 1.4rem;
+	}
+	.TopAttractions ol li:nth-of-type(3) {
+	  grid-column: span 2;
+	  width: 50%;
+	  margin: 0 auto;
+	}
+	.TopAttractions ol li:nth-of-type(5) {
+	  grid-column: span 1;
+	  width: 100%;
+	  margin: 0 auto;
+	}
+	.HarbinCuisine .item .CuisineP h3 {
+	  font-size: 2rem;
+	}
+	ul {
+	  width: 76%;
 	}
 }
+  @media (max-width: 767px) {
+	.banner h1 {
+	  font-size: 4rem;
+	}
+	.intro,
+	.TopAttractions ol,
+	.TopAttractions ol p,
+	.harbinCuisine .item .CuisineP p,
+	ul li {
+	  font-size: 0.9rem;
+	}
+	h2 {
+	  font-size: 1.8rem;
+	}
+	.TopAttractions ol {
+	  display: block;
+	}
+	.TopAttractions ol,
+	.TopAttractions ol h3 {
+	  font-size: 1.2rem;
+	}
+	.TopAttractions ol li:nth-of-type(5) {
+	  grid-column: span 1;
+	  width: 100%;
+	  margin: 0 auto;
+	}
+	.intro {
+	  margin: 4% 2%;
+	}
+	.TopAttractions,
+	.HarbinCuisine,
+	ul {
+	  margin: 4% 3%;
+	}
+	.HarbinCuisine .item {
+	  flex-direction: column;
+	  margin: 2% 0;
+	}
+	.HarbinCuisine .item .CuisineImage,
+	.HarbinCuisine .item .CuisineP {
+	  width: 100%;
+	  padding: 0;
+	}
+	.HarbinCuisine .item:nth-of-type(2n) .CuisineImage {
+	  order: inherit;
+	}
+	.HarbinCuisine .item .CuisineP {
+	  padding: 2% 0;
+	}
+	.HarbinCuisine .item .CuisineP h3 {
+	  font-size: 1.6rem;
+	}
+	ul {
+	  width: 94%;
+	}
+}
+  
