@@ -152,7 +152,7 @@ ul li {
 	  width: 76%;
 	}
 }
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
 	.banner h1 {
 	  font-size: 4rem;
 	}
