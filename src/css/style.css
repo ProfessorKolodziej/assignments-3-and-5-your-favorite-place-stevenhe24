@@ -11,7 +11,7 @@ body {
 }
 .banner {
 	position: relative;
-  }
+}
 .banner h1 {
 	position: absolute;
 	top: 28%;
@@ -29,7 +29,7 @@ body {
 	font-family: "Lora", serif;
 	font-weight: normal;
 	font-style: normal;
-  }
+}
 h2 {
 	padding: 2% 1%;
 	margin-top: 1%;
@@ -39,7 +39,7 @@ h2 {
 	color: #000;
 	font-style: italic;
 	font-weight: bold;
-  }
+}
 .TopAttractions ol {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
